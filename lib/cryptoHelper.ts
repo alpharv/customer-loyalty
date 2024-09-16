@@ -3,12 +3,11 @@ export const VerifyRequest = (
     requestBody: string,
     requestHash: string | undefined
 ): boolean => {
-    console.log('VerifyRequest');
+   console.log('VerifyRequest: requestHash='+requestHash);
     if (typeof requestHash === "undefined") {
     return false;
     }
     const hashKey: string = process.env.VERIFICATION_KEY as string;
-    console.log('VerifyRequest:hashKey=' + hashKey);
     const bodyBytes: Buffer = Buffer.from(requestBody, "utf-8");
     const keyBytes: Buffer = Buffer.from(hashKey, "utf-8");
     const hash = crypto
