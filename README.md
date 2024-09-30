@@ -3,5 +3,6 @@ This is a simple example of a middleware for Sitecore OrderCloud and is used as 
 The posts can be found here:
 
 https://www.alpha-solutions.com/us/insight/sitecore-ordercloud-loyalty-program-part-1
+
 https://www.alpha-solutions.com/us/insight/sitecore-ordercloud-loyalty-program-part-2
 
