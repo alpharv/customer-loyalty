@@ -4,7 +4,6 @@ import { NextRequest } from "next/server";
 
 export async function POST(request: NextRequest) {
     if (process.env.REACT_APP_LOGGING === "true") {
-        console.log(request.headers);   
         console.log(request.body);   
     }
     var VerificationHeaderName = process.env.VERIFICATION_HEADER as string
